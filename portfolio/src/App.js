@@ -4,6 +4,7 @@ import projects from './index.js'
 import Header from './Components/Header';
 import Main  from './Components/Main';
 import Project  from './Components/Project';
+import ProjectButton  from './Components/ProjectButton';
 
 
 class App extends Component {
@@ -18,6 +19,7 @@ class App extends Component {
       <div className="App">
         <Header />
         <Main />
+        <ProjectButton />
         <Project />
       </div>
     );

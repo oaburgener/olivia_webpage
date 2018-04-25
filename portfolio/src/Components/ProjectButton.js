@@ -2,17 +2,18 @@ import React, { Component } from 'react';
 import '../styles/Project.css';
 
 
-class Project extends Component {
+class ProjectButton extends Component {
   constructor(props){
     super(props)
   }
 
   render(){
     return(
-      <div className='project'>
+      <div className='project-button'>
+        <button>Projects</button>
       </div>
     )
   }
 }
 
-export default Project;
+export default ProjectButton;
