@@ -4,10 +4,8 @@ import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
 
-const projects = [
+export const content = [
   {
     'id':1,
     'name': 'Pennyworth',
@@ -15,7 +13,7 @@ const projects = [
     'repoFrontend': 'https://github.com/oaburgener/pennyworth.io_frontend',
     'repoBackend': 'https://github.com/oaburgener/pennyworth.io',
     'link': 'https://youtu.be/i8krQ3FfIaE',
-    'tech': 'React Native, Redux, Express, Knex, PostgreSQL, Firebase'
+    'tech': ['React Native', 'Redux', 'Express', 'Knex', 'PostgreSQL', 'Firebase']
   },
 
   {
@@ -24,7 +22,7 @@ const projects = [
     'summary': 'My team and I partnered with PRO-FILE to create a full-stack editorial site where athletes can sign-up and login to submit their personal articles. We provided administrative access for business owners to manage the site.',
     'repo': 'https://github.com/oaburgener/PRO-FILE_POST',
     'link': 'https://theprofilepost.herokuapp.com/',
-    'tech': 'React, Redux, Javascript, CSS, HTML, Express, Knex, PostgreSQL, Bootstrap'
+    'tech': ['React', 'Redux','Javascript', 'CSS', 'HTML', 'Express', 'Knex', 'PostgreSQL', 'Bootstrap']
   },
 
   {
@@ -33,7 +31,7 @@ const projects = [
     'summary': 'Boomtown, a local accelerator in Boulder, asked for an application to make tracking how successful their workshops were, easier. In a group, we then created an app for admin that sends out text message surveys to all of their attendees. With the data they receive from those surveys we then create charts so they can see the best and most attended workshops.',
     'repo': 'https://github.com/llamacoder/q2-boomtown',
     'link': 'https://boomtown-rocks.herokuapp.com/',
-    'tech': 'Javascript, AJAX, CSS, HTML, jQuery, Express, Knex, Twilio, Node Scheduler, Chart.js'
+    'tech': ['Javascript', 'AJAX', 'CSS', 'HTML', 'jQuery', 'Express', 'Knex', 'Twilio', 'Node Scheduler', 'Chart.js']
   },
 
   {
@@ -42,7 +40,9 @@ const projects = [
     'summary': 'I built an application that suggests outfits for women and men based off of the weather conditions of their location. Shopstyle Collective API and Weather Underground API was used to gather data.',
     'repo': 'https://github.com/llamacoder/q2-boomtown',
     'link': 'https://boomtown-rocks.herokuapp.com/',
-    'tech': 'Javascript, AJAX, CSS, HTML, jQuery, Express, Knex, Twilio, Node Scheduler, Chart.js'
+    'tech': ['Javascript', 'AJAX', 'CSS', 'HTML', 'jQuery', 'Shopstyle Collective API', 'Weather Underground API']
   }
 ]
-export default projects;
+
+ReactDOM.render(<App />, document.getElementById('root'));
+registerServiceWorker();

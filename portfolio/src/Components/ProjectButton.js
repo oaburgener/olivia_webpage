@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import '../styles/Project.css';
+import '../styles/ProjectButton.css';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 
 class ProjectButton extends Component {
@@ -10,7 +11,9 @@ class ProjectButton extends Component {
   render(){
     return(
       <div className='project-button'>
-        <button>Projects</button>
+        <Link to='/projects'>
+          <button className='project_button'>Projects</button>
+        </Link>
       </div>
     )
   }
